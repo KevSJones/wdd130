@@ -19,12 +19,13 @@ header {
   grid-template-columns: 200px 1fr;
 }
 main {
+  position: grid;
   margin: 1rem auto;
   border: 1px solid #020202;
   align-items: center;
   justify-content: left;
 
-  background-color: rgb(206, 209, 205);
+  background-color: rgb(234, 234, 234);
   padding: 1rem;
 }
 
