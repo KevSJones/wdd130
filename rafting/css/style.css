@@ -91,8 +91,8 @@ footer {
 .cta {
   position: absolute;
   display: grid;
-  bottom: 25px;
-  right: 25px;
+  bottom: 50px;
+  left: 50px;
   background: radial-gradient(
     rgb(206, 209, 205),
     rgb(180, 201, 177)
