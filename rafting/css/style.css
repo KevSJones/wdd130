@@ -27,10 +27,7 @@ main {
   align-items: center;
   justify-content: center;
   background-color: rgb(206, 209, 205);
-  grid-gap: 1rem;
-}
-button {
-  font-size: 40px;
+  grid-gap: 2rem;
 }
 
 h1 {
@@ -107,6 +104,16 @@ footer {
   align-items: center;
   align-content: center;
   font-size: large;
+}
+.cta a {
+  font-size: 40px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.cta a:hover {
+  color: whitesmoke;
 }
 .cta p {
   text-align: center;
