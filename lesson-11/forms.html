@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="css/master.css"
+    />
+    <form
+      action="/my-handling-form-page"
+      method="post"
+    >
+      <ul>
+        <li>
+          <label for="name"
+            >Name:</label
+          >
+          <input
+            type="text"
+            name="user_name"
+            placeholder="First and last name"
+          />
+        </li>
+        <li>
+          <label for="mail"
+            >E-mail:</label
+          >
+          <input
+            type="email"
+            name="user_email"
+            placeholder="email@mail.com"
+          />
+        </li>
+        <li>
+          <label for="msg"></label>
+          <textarea
+            id="msg"
+            name="user_message"
+            placeholder="Please give us your feedback."
+          ></textarea>
+        </li>
+
+        Happy:
+        <input
+          type="radio"
+          name="mood"
+          value="Happy"
+        />
+        Sad:<input
+          type="radio"
+          name="mood"
+          value="Sad"
+        />
+        Other:
+        <input
+          type="radio"
+          name="mood"
+          value="Other"
+        />
+        <input
+          type="submit"
+          name="submit"
+        />
+      </ul>
+    </form>
+  </body>
+</html>

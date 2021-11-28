@@ -1,0 +1,25 @@
+form {
+  width: 300px;
+  background-color: #234523;
+  padding: 4px;
+}
+input {
+  width: 95%;
+}
+input,
+textarea {
+  outline: none;
+  border: 1px solid #aaaa;
+}
+textarea {
+  resize: vertical;
+  width: 95%;
+  min-height: 200px;
+  max-height: 400px;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 4px
+    rgba(255, 0, 0, 0.5);
+  border: 1px solid #1111;
+}
