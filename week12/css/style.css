@@ -7,7 +7,65 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  padding: none;
   align-items: center;
-  font-family: (your choice), sans-serif;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia,
+    Times, "Times New Roman", serif,
+    sans-serif;
   letter-spacing: 0.03em;
+}
+.card {
+  background-color: rgb(238, 234, 234);
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0.5em 0.5em 0.5em 0.5em
+    rgb(73, 73, 73);
+}
+.heart-btn {
+  position: absolute;
+  background: none;
+  top: 8%;
+  right: 37%;
+  font-size: 32px;
+  border: none;
+}
+.heart-btn:hover {
+  transform: scale(1.07);
+}
+.heart-btn:after {
+  transform: scale(1.1);
+  color: ;
+}
+
+.temple {
+  border-radius: 15px 15px 0 0;
+}
+.card a {
+  width: 150px;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  text-decoration: none;
+  text-align: center;
+  justify-self: right;
+  color: black;
+  border-width: 1px;
+  border: black;
+}
+.card a:hover {
+  transform: scale(1.03);
+  color: white;
+  background-color: rgb(73, 73, 73);
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  padding: none;
+}
+footer p {
+  font-weight: bold;
+  grid-column: 1/2;
 }
