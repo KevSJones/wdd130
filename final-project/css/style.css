@@ -1,4 +1,5 @@
 body {
+  max-width: 868;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body {
 
 h1 {
   background-color: rgb(163, 14, 14);
+  text-align: center;
 }
 h2 {
   background-color: grey;
