@@ -10,17 +10,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Document</title>
+    <title>Form Practice</title>
   </head>
   <body>
     <link
       rel="stylesheet"
       href="css/master.css"
     />
+
     <form
       action="/my-handling-form-page"
       method="post"
     >
+      <h2>Feedback</h2>
       <ul>
         <li>
           <label for="name"
@@ -49,8 +51,12 @@
             name="user_message"
             placeholder="Please give us your feedback."
           ></textarea>
+          <label
+            for="How do you feel about your recent transaction?"
+            >How do you feel about your
+            recent transacion?
+          </label>
         </li>
-
         Happy:
         <input
           type="radio"
@@ -70,7 +76,7 @@
         />
         <input
           type="submit"
-          name="submit"
+          name="Send Feedback"
         />
       </ul>
     </form>

@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
-  background-color: rgb(206, 209, 205);
 }
 header {
   display: grid;
@@ -29,6 +28,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  background-color: rgb(206, 209, 205);
 }
 h1 {
   background-color: rgb(163, 14, 14);
