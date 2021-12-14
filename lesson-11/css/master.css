@@ -38,7 +38,7 @@ textarea:focus {
   border: 1px solid #1111;
 }
 li {
-  display: inline-block;
+  display: grid;
 }
 ul {
   display: grid;

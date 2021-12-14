@@ -217,3 +217,13 @@ footer {
 .mainnav a:hover {
   color: white;
 }
+form {
+  width: 300px;
+  background-color: #d9d9d9;
+  padding: 4px;
+  margin: 4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+}

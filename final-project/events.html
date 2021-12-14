@@ -28,9 +28,24 @@
       href="css/style.css"
     />
     <title>JuniorRacing.com</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 2px;
+      }
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <header>
+      <img
+        class="logo"  
+        src="images/JuniorRacing.com.png"
+        alt="Company Logo"
+      />
       <h1>JuniorCycling.com</h1>
       <img
         class="logo"  
@@ -70,8 +85,68 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="event-page">
+      <form
+      action="/my-handling-form-page"
+      method="post"
+      >
+      <h2>Join the mailing list to find out when new events are added.</h2>
+      <ul>
+        <li>
+          <label for="name"
+            >Name:</label
+          >
+          <input
+            type="text"
+            name="user_name"
+            placeholder="First and last name"
+          />
+        </li>
+        <li>
+          <label for="mail"
+            >E-mail:</label
+          >
+          <input
+            type="email"
+            name="user_email"
+            placeholder="email@mail.com"
+          />
+        </li>
+        <li>
+          <label for="msg"></label>
+          <textarea
+            id="msg"
+            name="user_message"
+            placeholder="What events do you want to do?"
+          ></textarea>
+          
+      </ul>
+    </form>
+    <img src="images/junior-cycling.jpeg" alt="Kids race." class="event-image-1">
+    <h2 class="event-name-1">Find Events by Name</h2>
+      <img src="images/search.jpeg" alt="search bar" class="event-name-2">
+    <h2 class="event-date-1">Find Event by Date</h2>
+      <img src="images/calendar.jpeg" alt="calendar" class="event-date-2">
+    <h2 class="event-locaton-1">Find Event by Location</h2>
+    
+    
+    <div id="map" class="map"></div>
+    <script>
+      function initMap() {
+        var location = {lat: 37.090240, lng:-95.712891};
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: location
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      }
 
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxDbRBZYFtkk52Ep-OdZDc7Gkyv7mSdlk&callback=initMap"></script>
+      
 
     </main>
     
